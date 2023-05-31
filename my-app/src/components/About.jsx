@@ -19,18 +19,19 @@ const About = () => {
   }, []);
 
   return (
-    <div className='about'>
-      {data ? (
-        <div>
-          <h1>{data.title}</h1>
-          <p>{data.description}</p>
-        </div>
+    <div>
+      {data.length > 0 ? (
+        data.map((item, index) => (
+          <div key={index} className="about">
+            <h1>{item.title}</h1>
+            <p>{item.description}</p>
+          </div>
+        ))
       ) : (
         <p>Loading...</p>
       )}
     </div>
   );
-  
 };
 
 export default About;
