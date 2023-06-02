@@ -11,39 +11,7 @@ body{
   text-align: center;
 }
 
-.banner {
-  position: relative;
-  margin-top: 68.36px;
-  
-}
 
-.banner img{
-  background: #000000;
-mix-blend-mode: darken;
-border-radius: 25px;
-width: 1240px;
-height: 223px;
-object-fit: cover;
-}
-
-.banner-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: white;
-  font-family: Montserrat;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 68px;
-  letter-spacing: 0em;
-  text-align: left;
-
-}
 
 .grid-container{
   height: 829px;

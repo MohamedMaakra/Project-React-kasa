@@ -1,0 +1,17 @@
+.banniere {
+   margin-left: 6.94%;
+    margin-top: 61px;
+  }
+  
+.banniere img{
+    background: #000000;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    width: 1240px;
+    height: 223px;
+    object-fit: cover;
+  }
+
+.about-collaps{
+    margin-top: 31px;
+}     

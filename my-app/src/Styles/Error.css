@@ -1,0 +1,23 @@
+.Error{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Error img {
+    margin: auto;
+    margin-top: 247px;
+}
+
+.Error p {
+    text-align: center;
+    background: none;
+    margin-top: 139px;
+}
+
+.Error a{
+    text-align: center;
+    margin-top: 139px;
+    margin-bottom: 139px;
+    color: #FF6060;;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Collaps from './Collaps';
 
 const About = () => {
   const [data, setData] = useState(null);
@@ -8,7 +9,6 @@ const About = () => {
       try {
         const response = await fetch('/about.json');
         const jsonData = await response.json();
-        console.log(jsonData);
         setData(jsonData);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -19,14 +19,17 @@ const About = () => {
   }, []);
 
   return (
-    <div>
-      {data.length > 0 ? (
-        data.map((item, index) => (
-          <div key={index} className="about">
-            <h1>{item.title}</h1>
-            <p>{item.description}</p>
-          </div>
-        ))
+    <div className='about'>
+      {data ? (
+        <div className='about-collaps'>
+          {data.map((item) => (
+            <Collaps
+              key={item.id}
+              title={item.title}
+              content={item.description}
+            />
+          ))}
+        </div>
       ) : (
         <p>Loading...</p>
       )}
@@ -35,3 +38,4 @@ const About = () => {
 };
 
 export default About;
+

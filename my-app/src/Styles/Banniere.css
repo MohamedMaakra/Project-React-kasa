@@ -1,0 +1,8 @@
+.banniere{
+    width: 1240px;
+    height: 223px;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+}
