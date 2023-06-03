@@ -1,16 +1,21 @@
 import React from "react";
-//import Nav from '../components/Nav.jsx';
-//import Footere from "../components/Footer.jsx";
 import '../App.css';
-import Header from "../components/Header.jsx";
+import IMG from '../assets/IMG.png';
+import CardData from "../components/Card";
 
-
- export const Home = () => {
-    return (
-        <div>
-            <Header />
-            
+export const Home = () => {
+  return (
+    <main>
+      <div>
+        <div className="banner">
+          <img src={IMG} alt="IMG" />
+          <div className="banner-content">
+            <p>Chez vous, partout et ailleurs</p>
+          </div>
         </div>
-    );
+        <CardData />
+      </div>
+    </main>
+  );
 };
 

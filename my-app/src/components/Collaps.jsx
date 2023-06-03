@@ -18,7 +18,7 @@ const Collaps = ({ title, content }) => {
       </div>
       {isOpen && (
         <div className="collaps-content">
-          <p>{content}</p>
+          <p className='collaps-p'>{content}</p>
         </div>
       )}
     </div>
