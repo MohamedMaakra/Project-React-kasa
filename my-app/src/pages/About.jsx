@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Collaps from './Collaps';
+import '../Styles/About.css';
+import montagne from '../assets/montagne.png';
+import Collaps from '../components/Collaps';
 
 const About = () => {
   const [data, setData] = useState(null);
@@ -20,6 +22,9 @@ const About = () => {
 
   return (
     <div className='about'>
+      <div className="banniere">
+        <img src={montagne} alt='montagne' />
+      </div>
       {data ? (
         <div className='about-collaps'>
           {data.map((item) => (
@@ -38,4 +43,9 @@ const About = () => {
 };
 
 export default About;
+
+
+
+
+
 
