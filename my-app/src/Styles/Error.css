@@ -13,6 +13,8 @@
     text-align: center;
     background: none;
     margin-top: 139px;
+    color: #FF6060;
+    font-size: 36px;
 }
 
 .Error a{
@@ -20,4 +22,36 @@
     margin-top: 139px;
     margin-bottom: 139px;
     color: #FF6060;;
+    font-size: 18px;
+}
+
+.Error-responsive{
+    display: none;
+}
+
+@media screen and (max-width: 375px){
+    .Errorr{
+        display: none;
+    }
+    .Error-responsive{
+        display: block;
+    }
+    .Error img{
+        margin-top: 116px;
+    }
+    .Error p {
+        width: 260px;
+        margin: auto;
+        margin-top: 113px;
+        line-height: 25.67px;
+        font-size: 18px;
+    }
+    .Error p span::after {
+        content: "\A";
+        white-space: pre;
+    }
+
+    .Error a{
+        font-size: 14px;
+    }
 }

@@ -14,7 +14,7 @@ const Collaps = ({ title, content }) => {
     <div className="collaps">
       <div className="collaps-header" onClick={handleToggle}>
         <h1>{title}</h1>
-        <img src={isOpen ? fermer : ouvrir}  />
+        <img src={isOpen ? ouvrir :fermer }  />
       </div>
       {isOpen && (
         <div className="collaps-content">

@@ -1,5 +1,5 @@
 .banniere {
-   margin-left: 6.94%;
+   
     margin-top: 61px;
   }
   
@@ -14,4 +14,21 @@
 
 .about-collaps{
     margin-top: 31px;
-}     
+}
+
+
+@media screen and (max-width: 375px){
+  
+  .banniere{
+    margin-top: 23px;
+  }
+  
+  .banniere img{
+    max-width: 336px;
+  }
+
+ .collaps{
+  max-width: 336px;
+ }
+
+}

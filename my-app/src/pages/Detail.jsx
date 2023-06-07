@@ -13,7 +13,7 @@ const CardDetails = () => {
         const jsonData = await response.json();
         const card = jsonData.find((card) => card.id === id);
         setCardDetails(card);
-        console.log(card)
+        console.log(card);
       } catch (error) {
         console.error('Error fetching card details:', error);
       }
@@ -22,17 +22,28 @@ const CardDetails = () => {
     fetchCardDetails();
   }, [id]);
 
-  if (undefined===CardDetails) {
-    return <Navigate to='*' />
+  if (undefined === CardDetails) {
+    return <Navigate to='*' />;
   }
 
- 
+  const renderEquipmentsList = () => {
+    return (
+      <div>
+        <ul className='equipement' >
+          {CardDetails?.equipments && CardDetails.equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+  
 
   return (
     <div className="card-details">
       <h2>{CardDetails?.title}</h2>
-      <Collaps title= 'Description' content={CardDetails?.description} />
-      <Collaps title="Équipements" content={CardDetails?.equipments.join(', ')} />
+      <Collaps title="Description" content={CardDetails?.description} />
+      <Collaps title="Équipements" content={renderEquipmentsList()} />
     </div>
   );
 };

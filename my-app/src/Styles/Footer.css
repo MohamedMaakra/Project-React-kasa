@@ -1,0 +1,14 @@
+.Footer-responsive{
+    display: none;
+}
+
+@media screen and (max-width: 375px){
+.Footer-banniere{
+    display: none;
+    }
+.Footer-responsive{
+    display: block;
+    margin: auto;
+    width: 100%;
+}    
+}

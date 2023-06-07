@@ -26,3 +26,28 @@ header{
     color: #FF6060;
     text-decoration: none;
   }
+
+  .LOGO-responsive{
+    display: none;
+  }
+
+  @media screen and (max-width: 375px) {
+ nav{
+  
+ }
+.LOGO-responsive{
+  display: block;
+}
+.LOGO{
+  display: none;
+}
+
+.Link{
+  font-size: 17px;
+  gap: 26px;
+  
+}
+   
+    }
+    
+   
