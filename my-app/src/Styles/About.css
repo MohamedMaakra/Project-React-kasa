@@ -1,12 +1,12 @@
-.banniere {
+.banniere-about {
    
     margin-top: 61px;
   }
   
   
-.banniere img{
+.banniere-about img{
     background: #000000;
-    mix-blend-mode: darken;
+    
     border-radius: 25px;
     width: 1240px;
     height: 223px;
@@ -17,14 +17,23 @@
     margin-top: 31px;
 }
 
+.banniere-about{
+  width: 1240px;
+  height: 223px;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 25px;
+}
+
 
 @media screen and (max-width: 375px){
   
-  .banniere{
+  .banniere-about{
     margin-top: 23px;
   }
   
-  .banniere img{
+  .banniere-about img{
     max-width: 336px;
   }
 

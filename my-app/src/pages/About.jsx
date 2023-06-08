@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <div className='about'>
-      <div className="banniere">
+      <div className="banniere-about">
         <img src={montagne} alt='montagne' />
       </div>
       {data ? (

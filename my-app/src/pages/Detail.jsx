@@ -35,7 +35,7 @@ const CardDetails = () => {
   }
   return (
     <div className="card-details">
-      <div className="carousel">
+      <div className="carousel-content">
       {CardDetails.pictures && <Carousel pictures={CardDetails.pictures} />}
       </div>
       <div className='donne'>
@@ -48,7 +48,7 @@ const CardDetails = () => {
           <img src={CardDetails?.host?.picture} alt="Couverture" />
         </div>
       </div>
-      <div className="tags">
+      <div className="tags-content">
         <p>{renderTagsList(CardDetails)}</p>
         <div className='rating'>
           <StarRating rating={CardDetails?.rating} />

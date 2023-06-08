@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import '../Styles/Banniere.css'
+import prev from '../assets/prev.png';
+import next from '../assets/next.png'
 
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,12 +16,12 @@ const Carousel = ({ pictures }) => {
 
   return (
     <div className="carousel">
-      <button className="carousel-button" onClick={prevSlide}>
-        Previous
+      <button className="carousel-button fleche-prev" onClick={prevSlide}>
+      <img className='' src={prev} alt="prev"  />
       </button>
       <img src={pictures[currentIndex]} alt="Carousel Slide" className="carousel-image" />
-      <button className="carousel-button" onClick={nextSlide}>
-        Next
+      <button className="carousel-button fleche-next" onClick={nextSlide}>
+       <img className=' ' src={next} alt="next"  />
       </button>
     </div>
   );
