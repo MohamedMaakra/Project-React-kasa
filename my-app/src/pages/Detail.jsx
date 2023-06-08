@@ -4,6 +4,7 @@ import Collaps from '../components/Collaps';
 import '../Styles/Detail.css';
 import StarRating from '../components/rating.jsx'
 import { renderEquipmentsList, renderTagsList } from '../components/render';
+import Carousel from '../components/Banniere';
 
 const CardDetails = () => {
   const { id } = useParams();
@@ -28,10 +29,15 @@ const CardDetails = () => {
   if (undefined === CardDetails) {
     return <Navigate to='*' />;
   }
-
   
+  if (CardDetails === null) {
+    return null; // Ou un indicateur de chargement
+  }
   return (
     <div className="card-details">
+      <div className="carousel">
+      {CardDetails.pictures && <Carousel pictures={CardDetails.pictures} />}
+      </div>
       <div className='donne'>
         <div className="info">
           <h2>{CardDetails?.title}</h2>
