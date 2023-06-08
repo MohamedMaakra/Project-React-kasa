@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../Styles/Collaps.css'
-import ouvrir from '../assets/ouvrir.png'
-import fermer from '../assets/fermer.png'
+import '../Styles/Collaps.css';
+import ouvrir from '../assets/ouvrir.png';
+import fermer from '../assets/fermer.png';
 
 const Collaps = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,14 +11,14 @@ const Collaps = ({ title, content }) => {
   };
 
   return (
-    <div className="collaps">
+    <div className={`collaps ${isOpen ? 'open' : ''}`}>
       <div className="collaps-header" onClick={handleToggle}>
         <h1>{title}</h1>
-        <img src={isOpen ? ouvrir :fermer }  />
+        <img src={isOpen ? ouvrir : fermer} alt="Toggle Icon" />
       </div>
       {isOpen && (
         <div className="collaps-content">
-          <p className='collaps-p'>{content}</p>
+          <p className="collaps-p">{content}</p>
         </div>
       )}
     </div>

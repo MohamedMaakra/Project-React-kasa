@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Collaps from '../components/Collaps';
+import '../Styles/Detail.css';
+import StarRating from '../components/rating.jsx'
+import { renderEquipmentsList, renderTagsList } from '../components/render';
 
 const CardDetails = () => {
   const { id } = useParams();
@@ -26,26 +29,35 @@ const CardDetails = () => {
     return <Navigate to='*' />;
   }
 
-  const renderEquipmentsList = () => {
-    return (
-      <div>
-        <ul className='equipement' >
-          {CardDetails?.equipments && CardDetails.equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        </ul>
-      </div>
-    );
-  };
   
-
   return (
     <div className="card-details">
-      <h2>{CardDetails?.title}</h2>
-      <Collaps title="Description" content={CardDetails?.description} />
-      <Collaps title="Équipements" content={renderEquipmentsList()} />
+      <div className='donne'>
+        <div className="info">
+          <h2>{CardDetails?.title}</h2>
+          <p className='location'>{CardDetails?.location}</p>
+        </div>
+        <div className="host">
+          <p>{CardDetails?.host?.name}</p>
+          <img src={CardDetails?.host?.picture} alt="Couverture" />
+        </div>
+      </div>
+      <div className="tags">
+        <p>{renderTagsList(CardDetails)}</p>
+        <div className='rating'>
+          <StarRating rating={CardDetails?.rating} />
+        </div>
+      </div>
+      <div className="collaps-detail">
+  <Collaps title="Description" content={CardDetails?.description} />
+  <Collaps title="Équipements" content={renderEquipmentsList(CardDetails)} />
+</div>
+
     </div>
   );
+  
+
+  
 };
 
 export default CardDetails;

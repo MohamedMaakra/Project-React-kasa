@@ -71,6 +71,8 @@ footer{
 }
  main{
   text-align: center;
+  width: 95%;
+  margin: auto;
  }
 .banner {
   position: relative;
