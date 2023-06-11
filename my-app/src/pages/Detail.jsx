@@ -49,7 +49,7 @@ const CardDetails = () => {
         </div>
       </div>
       <div className="tags-content">
-        <p>{renderTagsList(CardDetails)}</p>
+        <div>{renderTagsList(CardDetails)}</div>
         <div className='rating'>
           <StarRating rating={CardDetails?.rating} />
         </div>
