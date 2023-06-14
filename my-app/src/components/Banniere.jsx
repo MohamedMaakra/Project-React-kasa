@@ -17,11 +17,11 @@ const Carousel = ({ pictures }) => {
   return (
     <div className="carousel">
       <button className="carousel-button fleche-prev" onClick={prevSlide}>
-      <img className='' src={prev} alt="prev"  />
+      <img className='fleche' src={prev} alt="prev"  />
       </button>
       <img src={pictures[currentIndex]} alt="Carousel Slide" className="carousel-image" />
       <button className="carousel-button fleche-next" onClick={nextSlide}>
-       <img className=' ' src={next} alt="next"  />
+       <img className='fleche' src={next} alt="next"  />
       </button>
     </div>
   );

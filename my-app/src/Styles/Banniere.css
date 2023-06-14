@@ -1,31 +1,34 @@
 .carousel{
     position: relative;
+    margin: 0 10px;
 
 }
 .carousel-image{
     height: 415px;
-    width: 1240px;
+    width: 95%;
     border-radius: 25px;
     object-fit: cover;
 
 }
 .fleche-next{
-   right: 90px;
+    right: 3vw;
 }
 
 .fleche-prev{
-    left: 80px;
+    left: 3vw;
 }
 
 .carousel-button{
     position: absolute;
     top: 50%;
     transform: translateY(-70%);
-    width: 47px;
-    height: 80px;
+    
     background-color: transparent;
     border-color: transparent;
-  
-  
-  
+    
+}
+
+.fleche{
+    max-width: 5vw;
+    height: auto;
 }

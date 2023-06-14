@@ -37,7 +37,7 @@ header{
     display: none;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 600px) {
  
 .LOGO-responsive{
   display: block;
@@ -53,5 +53,15 @@ header{
 }
    
     }
-    
+
+    @media screen and (max-width: 600px)  {
+      .Link{
+        font-size: 12px;
+      }
+
+      .LOGO-responsive{
+        max-width: 70%;
+        height: auto;
+      }
+    }  
    

@@ -1,11 +1,18 @@
 .card-details{
     margin-top: 57px;
 }
+.contenu {
+        display: flex;
+    width: 95%;
+    margin: auto;
+}
 .donne{
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .info{
@@ -27,14 +34,28 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 0;
 }
 .collaps-detail {
     display: flex;
     gap: 20px;
     margin: auto;
-    width: 90%;
+    width: 95%;
+    margin-top: 24px;
   }
   
+
+.collaps-content {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
 
 
 .host{
@@ -63,8 +84,10 @@
 
 .tags-content{
     width: 90%;
-    margin: auto;
+    
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -76,6 +99,7 @@
     justify-content: space-between;
     padding: 0;
     margin: auto;
+    margin-top: 20px;
     
 }
 
@@ -91,4 +115,51 @@
     padding-left: 30px;
     padding-right: 30px;
 
+}
+
+@media screen and (max-width: 800px){
+    .contenu{
+        flex-direction: column;
+    }
+    .tags-content{
+        flex-direction: row-reverse;
+        margin: auto;
+        align-items: center;
+    }
+    .collaps-detail{
+        flex-direction: column;
+    }
+    
+    
+
+    
+}
+
+@media screen and (max-width: 430px){
+    .rating img{
+        height: 13px;
+        width: 13px;
+    }  
+
+    .host img{
+        height: 32px;
+        width: 32px;
+    }
+
+    .host p {
+        font-size: 12px;
+    }
+    .info h2{
+        font-size: 25px;
+    }
+    .info p{
+        font-size: 14px;
+    }
+    .tags {
+        margin-top: 0;
+    }
+    .tags li{
+        font-size: 10px;
+        margin-top: 10px;
+    }
 }

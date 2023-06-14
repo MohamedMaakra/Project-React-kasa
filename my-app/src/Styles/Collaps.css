@@ -1,12 +1,12 @@
 .collaps{
-    background: #FF6060;
-    border-radius: 5px;
-    width: 1023px;
-    margin: auto;
+    
+    flex: 50;
     margin-bottom: 30px;
 }
 
 .collaps-header{
+    background: #FF6060;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;

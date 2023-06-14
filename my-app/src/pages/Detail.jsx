@@ -38,20 +38,22 @@ const CardDetails = () => {
       <div className="carousel-content">
       {CardDetails.pictures && <Carousel pictures={CardDetails.pictures} />}
       </div>
+      <div className='contenu'>
       <div className='donne'>
         <div className="info">
           <h2>{CardDetails?.title}</h2>
           <p className='location'>{CardDetails?.location}</p>
         </div>
-        <div className="host">
-          <p>{CardDetails?.host?.name}</p>
-          <img src={CardDetails?.host?.picture} alt="Couverture" />
-        </div>
-      </div>
-      <div className="tags-content">
         <div>{renderTagsList(CardDetails)}</div>
-        <div className='rating'>
-          <StarRating rating={CardDetails?.rating} />
+      </div>
+        <div className="tags-content">
+          <div className="host">
+            <p>{CardDetails?.host?.name}</p>
+            <img src={CardDetails?.host?.picture} alt="Couverture" />
+          </div>
+          <div className='rating'>
+            <StarRating rating={CardDetails?.rating} />
+          </div>
         </div>
       </div>
       <div className="collaps-detail">

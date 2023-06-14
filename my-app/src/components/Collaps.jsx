@@ -11,16 +11,14 @@ const Collaps = ({ title, content }) => {
   };
 
   return (
-    <div className={`collaps ${isOpen ? 'open' : ''}`}>
+    <div className="collaps">
       <div className="collaps-header" onClick={handleToggle}>
         <h1>{title}</h1>
         <img src={isOpen ? ouvrir : fermer} alt="Toggle Icon" />
       </div>
-      {isOpen && (
-        <div className="collaps-content">
-          <p className="collaps-p">{content}</p>
-        </div>
-      )}
+      <div className={`collaps-content ${isOpen ? 'visible' : 'invisible'}`}>
+        <p className="collaps-p">{content}</p>
+      </div>
     </div>
   );
 };

@@ -2,6 +2,11 @@
     display: none;
 }
 
+.footer img{
+    width: 100%;
+    margin: auto;
+}
+
 @media screen and (max-width: 375px){
 .Footer-banniere{
     display: none;
