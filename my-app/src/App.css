@@ -109,6 +109,19 @@ margin: auto;
 }
 
 
+@media screen and (max-width:1000px){
+.banner-content{
+  font-size: 35px;
+}
+}
+
+
+@media screen and (max-width:640px){
+  .banner-content{
+    font-size: 25px;
+  }
+  }
+
 @media screen and (max-width: 375px) {
 body{
   max-width: 375px;
@@ -118,10 +131,21 @@ body{
 .annonce{
   flex-direction: column;
   padding: 0;
-
-  
 }
 
+.annonce img{
+  width: 320px;
+  height: 220px;
+}
+.card{
+  width: 335px;
+  height: 225px;
+  margin-top: 20px;
+}
+
+.banner{
+  margin-top: 20px;
+}
 .banner img {
   max-width: 335px;
   max-height: 111px;
@@ -139,10 +163,18 @@ body{
 .grid-container{
   max-width: 95% ;
   background-color: white;
+  margin: inherit;
 }
 
 figure {
-  margin: 0;
+  width: 320px;
+  height: 280px;
 }
 
+figcaption{
+  padding: 0px 0 0 10px;
+}
+footer {
+  margin-top: 80px;
+}
 }
