@@ -8,14 +8,27 @@
     width: 95%;
     border-radius: 25px;
     object-fit: cover;
-
 }
+.carousel-counter{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: absolute;
+    left: 49%;
+    right: 49%;
+    top: 86%;
+    bottom: 6%;
+}
+
 .fleche-next{
-    right: 3vw;
+    right: 2vw;
 }
 
 .fleche-prev{
-    left: 3vw;
+    left: 2vw;
 }
 
 .carousel-button{
@@ -31,4 +44,11 @@
 .fleche{
     max-width: 5vw;
     height: auto;
+}
+
+
+@media screen and (max-width: 375px){
+    .carousel-counter{
+        display: none;
+    }
 }
