@@ -1,6 +1,9 @@
 .card-details{
     margin-top: 57px;
 }
+:hover .card{
+    cursor: pointer;
+}
 .contenu {
         display: flex;
     width: 95%;

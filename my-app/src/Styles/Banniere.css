@@ -35,10 +35,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-70%);
-    
     background-color: transparent;
     border-color: transparent;
-    
+}
+
+:hover .carousel-button{
+    cursor: pointer;
 }
 
 .fleche{

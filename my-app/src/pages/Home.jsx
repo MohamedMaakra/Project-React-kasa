@@ -9,6 +9,7 @@ export const Home = () => {
       <div>
         <div className="banner">
           <img src={IMG} alt="IMG" />
+          <div className="banner-transparent"></div>
           <div className="banner-content">
             <p>Chez vous, partout et ailleurs</p>
           </div>

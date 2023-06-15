@@ -10,9 +10,11 @@
     align-items: center;
     justify-content: space-between;
     height: 47px;
-    
 }
 
+:hover .collaps-header{
+    cursor: pointer;
+}
 .collaps-header img{
     margin-right: 20px;
 }

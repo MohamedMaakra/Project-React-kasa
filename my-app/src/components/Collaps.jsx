@@ -17,7 +17,7 @@ const Collaps = ({ title, content }) => {
         <img src={isOpen ? ouvrir : fermer} alt="Toggle Icon" />
       </div>
       <div className={`collaps-content ${isOpen ? 'visible' : 'invisible'}`}>
-        <p className="collaps-p">{content}</p>
+        <div className="collaps-p">{content}</div>
       </div>
     </div>
   );

@@ -72,7 +72,18 @@ footer{
 .banner {
   position: relative;
   margin-top: 68.36px;
-  
+}
+.banner-content{
+  background-color: #0000001c;
+width: 95%;
+height: 223px;
+position: absolute;
+margin: auto;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+border-radius: 25px;
 }
 
 .banner img{
