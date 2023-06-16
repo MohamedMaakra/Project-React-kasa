@@ -41,7 +41,7 @@ const CardDetails = () => {
       <div className='contenu'>
       <div className='donne'>
         <div className="info">
-          <h2>{CardDetails?.title}</h2>
+          <h1>{CardDetails?.title}</h1>
           <p className='location'>{CardDetails?.location}</p>
         </div>
         <div>{renderTagsList(CardDetails)}</div>

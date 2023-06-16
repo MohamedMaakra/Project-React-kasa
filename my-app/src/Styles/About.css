@@ -1,5 +1,7 @@
+.about{
+  margin-top: 55px  ;
+}
 .banniere-about {
-    
     margin-top: 61px;
   }
   
@@ -28,7 +30,11 @@
   border-radius: 25px;
   margin: auto;
 }
-
+@media screen and (max-width: 1000px){
+  .about{
+    margin-top: 22px;
+  }
+}
 
 @media screen and (max-width: 375px){
   

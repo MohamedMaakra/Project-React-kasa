@@ -12,7 +12,7 @@ export const renderEquipmentsList = (CardDetails) => {
   
   export const renderTagsList = (CardDetails) => {
     return (
-      <div className="tags">
+      <div className="tag">
         <ul className='tags'>
           {CardDetails?.tags && CardDetails.tags.map((tag, index) => (
             <li key={`tag-${index}`}>{tag}</li>

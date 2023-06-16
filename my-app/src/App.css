@@ -74,16 +74,37 @@ footer{
   margin-top: 68.36px;
 }
 .banner-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 95%;
+  height: 223px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.banner-transparent{
   background-color: #0000001c;
-width: 95%;
-height: 223px;
-position: absolute;
-margin: auto;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-border-radius: 25px;
+  width: 95%;
+  height: 223px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 25px;
 }
 
 .banner img{
@@ -96,24 +117,7 @@ object-fit: cover;
 margin: auto;
 }
 
-.banner-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: white;
-  font-family: Montserrat;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 68px;
-  letter-spacing: 0em;
-  text-align: left;
 
-}
 
 .active-link{
   text-decoration: underline !important;
@@ -126,11 +130,26 @@ margin: auto;
 }
 }
 
-
 @media screen and (max-width:640px){
   .banner-content{
     font-size: 25px;
+    justify-content: flex-start;
   }
+  .grid-container{
+    background-color: white;
+    margin-top: 0;
+    
+  }
+  .card{
+    margin-top: 20px;
+    
+  }
+  .annonce{
+    row-gap: 0px;
+    padding: 0;
+    
+  }
+  
   }
 
 @media screen and (max-width: 375px) {
@@ -141,7 +160,8 @@ body{
  
 .annonce{
   flex-direction: column;
-  padding: 0;
+  margin-bottom: 80px;
+  row-gap: 50px;
 }
 
 .annonce img{
@@ -157,10 +177,7 @@ body{
 .banner{
   margin-top: 20px;
 }
-.banner img {
-  max-width: 335px;
-  max-height: 111px;
-}
+
 
 .banner p {
   font-size: 24px;
@@ -168,6 +185,7 @@ body{
   max-width: 217px;
   line-height: 1.2em;
   white-space: pre-line;
+  margin-left: 16px;
 
 }
 
@@ -185,7 +203,6 @@ figure {
 figcaption{
   padding: 0px 0 0 10px;
 }
-footer {
-  margin-top: 80px;
-}
+
+
 }

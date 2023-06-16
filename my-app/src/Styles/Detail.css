@@ -22,7 +22,7 @@
     text-align: left;
     color: #FF6060;
 } 
-.info h2{    
+.info h1{    
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
@@ -152,17 +152,25 @@
     .host p {
         font-size: 12px;
     }
-    .info h2{
+    .info h1{
         font-size: 25px;
+        line-height: 27px;
     }
     .info p{
         font-size: 14px;
     }
+
+    .tag{
+        width: 100%;
+    }
     .tags {
         margin-top: 0;
+        flex-wrap: wrap;
+        width: 100%;
     }
     .tags li{
         font-size: 10px;
         margin-top: 10px;
+        flex: 1 1 auto;
     }
 }

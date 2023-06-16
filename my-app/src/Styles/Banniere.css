@@ -53,4 +53,7 @@
     .carousel-counter{
         display: none;
     }
+    .carousel-image{
+        height: 300px;
+    }
 }

@@ -56,11 +56,11 @@ header{
 
     @media screen and (max-width: 600px)  {
       .Link{
-        font-size: 12px;
+        font-size: 16px;
       }
 
       .LOGO-responsive{
-        max-width: 70%;
+        max-width: 80%;
         height: auto;
       }
     }  
