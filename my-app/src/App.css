@@ -27,7 +27,7 @@ body{
 
 } 
 .annonce img{
-  width: 340px;
+  width: 100%;
   height: 268px;
   border-radius: 10px 10px 0px 0px ;
   object-fit: cover;
@@ -40,6 +40,7 @@ figure{
   background-color:#FF6060 ;
   border-radius: 10px;
   margin: 0;
+  width: 100%;
 }
 figcaption {
   
@@ -57,7 +58,7 @@ figcaption {
 
 .card {
   display: flex;
-  width: 340px;
+  flex: 0 0 30%;
   height: 340px;
 }
 

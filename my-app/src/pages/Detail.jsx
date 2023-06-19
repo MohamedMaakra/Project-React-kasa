@@ -30,13 +30,11 @@ const CardDetails = () => {
     return <Navigate to='*' />;
   }
   
-  if (CardDetails === null) {
-    return null; // Ou un indicateur de chargement
-  }
+
   return (
     <div className="card-details">
       <div className="carousel-content">
-      {CardDetails.pictures && <Carousel pictures={CardDetails.pictures} />}
+      {CardDetails?.pictures && <Carousel pictures={CardDetails.pictures} />}
       </div>
       <div className='contenu'>
       <div className='donne'>
