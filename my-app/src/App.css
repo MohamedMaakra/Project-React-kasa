@@ -129,6 +129,12 @@ margin: auto;
 .banner-content{
   font-size: 35px;
 }
+@media screen and (max-width:1000px){
+.card{
+  flex: 0 0 45%;
+}
+}
+
 }
 
 @media screen and (max-width:640px){
@@ -143,6 +149,7 @@ margin: auto;
   }
   .card{
     margin-top: 20px;
+    flex: 100%;
     
   }
   .annonce{
